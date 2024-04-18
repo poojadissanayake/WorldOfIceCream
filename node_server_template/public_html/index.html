@@ -10,13 +10,85 @@
 </head>
 
 <header>
-    <nav class="nav bg-info nav-fill">
+    <!-- <nav class="nav bg-info nav-fill">
         <a class="nav-link active text-white" aria-current="page" href="#">Ice Cream</a>
         <a class="nav-link text-white" href="#sales">Sale Data</a>
         <a class="nav-link text-white" href="#pictures">Pictures</a>
         <a class="nav-link text-white" href="#stories">Stories & Text</a>
         <a class="nav-link text-white" href="#summary">Summary</a>
+    </nav> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Ice Cream</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#sales">Sale Data</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#pictures">Pictures</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#stories">Stories & Text</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#summary">Summary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-bs-toggle="offcanvas" href="#offcanvas" role="button"
+                            aria-controls="offcanvas">
+                            Offcanvas
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="https://www.deakin.edu.au/">Deakin</a></li>
+                            <li><a class="dropdown-item" href="https://www.google.com/">Google</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasLabel">This is the Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="g-5 mb-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, repellat doloremque! Sit enim eos,
+                perferendis officia asperiores eius tempora quidem deleniti labore itaque? Voluptatem, quae hic.
+                Cupiditate culpa quis nulla?
+            </p>
+            <div class="card">
+                <img src="resources/tim-stief-D_IG_9elRQQ-unsplash.jpg" class="card-img-top" alt="card pic">
+                <div class="card-body">
+                    <h5 class="card-title">Card Title</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eos
+                        quisquam aliquam nulla praesentium laborum voluptatibus expedita incidunt, odit cumque accusamus
+                        officiis iste tempora, dolore earum soluta eaque. Maxime, atque.</p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-controls="collapse">
+                            Button collapse
+                          </button>
+                          <div class="collapse" id="collapse">
+                            <div class="card card-body">
+                              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                            </div>
+                          </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     </div>
     <div class="container-fluid bg-info-subtle text-body-secondary text-center py-4">
         <div class="fs-3 fw-light">World of Ice Cream</div>
